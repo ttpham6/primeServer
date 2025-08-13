@@ -4,11 +4,9 @@ FROM python:3.9.9-slim-buster
 # Set the working directory inside the container
 WORKDIR /app
 
-RUN apk add --no-cache openssh
-
 # Copy the requirements file and install dependencies
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+COPY pip_requires.txt .
+RUN pip install -r pip_requires.txt
 
 # Copy the entire Flask application code into the container
 COPY . .
