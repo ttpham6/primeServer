@@ -1,0 +1,88 @@
+# Runs on system 
+Laptop 17-cnx3xxx
+32 gb rams
+Core i7-1355U 17 
+
+# 2^32 - 1 = 4294967295
+func:'sieve_of_eratosthenes' args:[(4294967295,), {}] took: 18683.7567 sec
+203,280,221
+
+    5 hours 
+    # 2^30 = 1073741823
+    Seems to consume 30% CPU 
+    Uses 95% of memory 
+
+
+# 2^31 = 2147483647
+Function sieve_of_eratosthenes memory usage: 4547.1016 MB
+func:'sieve_of_eratosthenes' args:[(2147483647,), {}] took: 553.2095 sec
+The number of primes in 2^31=2147483647 is 105097565
+
+Function sieve_of_eratosthenes_sqrt memory usage: 4213.3086 MB
+Function sieve_of_eratosthenes_sqrt took 693.6245 seconds
+The number of primes in 2^31=2147483647 is 105097565
+
+Function sieve_of_eratosthenes_new memory usage: 4545.4766 MB
+func:'sieve_of_eratosthenes_new' args:[(2147483647,), {}] took: 565.0455 sec
+The number of primes in 2^31=2147483647 is 105097565
+
+Function sieveOfAtkin memory usage: 2766.6016 MB
+Function sieveOfAtkin took 825.4922 seconds
+The number of primes in 2^31=2147483647 is 105097565
+
+# 2^30 = 1073741823
+Function sieve_of_eratosthenes memory usage: 2081.4141 MB
+func:'sieve_of_eratosthenes' args:[(1073741823,), {}] took: 149.2437 sec
+The number of primes in n=1073741823 is 54400028
+
+Function sieve_of_eratosthenes_sqrt memory usage: 2081.4336 MB
+func:'sieve_of_eratosthenes_sqrt' args:[(1073741823,), {}] took: 110.2506 sec
+The number of primes in n=1073741823 is 54400028
+
+Function sieve_of_eratosthenes_new memory usage: 2081.3711 MB
+func:'sieve_of_eratosthenes_new' args:[(1073741823,), {}] took: 112.3318 sec
+The number of primes in n=1073741823 is 54400028
+
+Function sieveOfAtkin memory usage: 2082.9531 MB
+Function sieveOfAtkin took 342.6757 seconds
+The number of primes in 2^30=1073741823 is 54400028
+
+
+# 2^24
+Function sieve_of_eratosthenes memory usage: 42.9492 MB
+Function sieve_of_eratosthenes took 1.9181 seconds
+The number of primes in 2^24=16777215 is 1077871
+
+Function sieve_of_eratosthenes_sqrt memory usage: 39.9492 MB
+Function sieve_of_eratosthenes_sqrt took 1.7920 seconds
+The number of primes in 2^24=16777215 is 1077871
+
+Function sieve_of_eratosthenes_new memory usage: 40.8164 MB
+Function sieve_of_eratosthenes_new took 1.6659 seconds
+The number of primes in 2^24=16777215 is 1077871
+
+Function sieveOfAtkin memory usage: 40.8477 MB
+Function sieveOfAtkin took 5.1578 seconds
+The number of primes in 2^24=16777215 is 1077871
+
+# 2^16
+
+Function sieve_of_eratosthenes memory usage: -0.1211 MB
+Function sieve_of_eratosthenes took 0.0130 seconds
+The number of primes in 2^16=65535 is 6542
+
+Function sieve_of_eratosthenes_sqrt memory usage: 1.1094 MB
+Function sieve_of_eratosthenes_sqrt took 0.0070 seconds
+The number of primes in 2^16=65535 is 6542
+
+Function sieve_of_eratosthenes_new memory usage: 0.0273 MB
+Function sieve_of_eratosthenes_new took 0.0060 seconds
+The number of primes in 2^16=65535 is 6542
+
+Function trialDivision memory usage: 0.2422 MB
+Function trialDivision took 0.0551 seconds
+The number of primes in 2^16=65535 is 6542
+
+Function sieveOfAtkin memory usage: 0.9648 MB
+Function sieveOfAtkin took 0.0220 seconds
+The number of primes in 2^16=65535 is 6542
