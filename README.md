@@ -12,11 +12,11 @@ Repository for the webUI portion of the primeServer
 * Build image from current Dockerfile
     - minikube image build -t prime-api:latest .
 * Deploy  
-    - kubectl apply -f prime-api-deployment.yaml 
+    - kubectl apply -f api-service.yaml 
 
 # Verifying that deplyoment was susccesful
 * Start the browser and api
-    - minikube service prime-api-service
+    - minikube service api-service
 
 # Useful troubleshooting commands
 * minikube ip
