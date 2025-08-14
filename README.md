@@ -1,5 +1,6 @@
-# primeServer
-Repository for API to calculate primes
+# primeClient
+Repository for the webUI portion of the primeServer
+
 
 # Configure and Deploy
 <p> These directions outline deploying the code and image using minikube and kubectl
