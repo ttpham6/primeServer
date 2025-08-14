@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: prime-client
+  name: prime-server
 
 spec:
   containers:
-  - image: prime-client:latest
+  - image: prime-api:latest
     imagePullPolicy: Never
-    name: prime-client
+    name: prime-server
     ports:
-    - containerPort: 80 
+    - containerPort: 5000 
       protocol: TCP

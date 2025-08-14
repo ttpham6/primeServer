@@ -9,6 +9,11 @@ Repository for the webUI portion of the primeServer
 * Start minikube if it has not already been started.
     - minikube status
     - minikube start --driver=docker
+* Cleanup is required if this is a reinstall
+    - kubectl get all
+    - kubectl delete pod prime-api
+    - kubectl delete service api-service
+    - kubectl get all
 * Build image from current Dockerfile
     - minikube image build -t prime-api:latest .
 * Deploy  
@@ -19,6 +24,7 @@ Repository for the webUI portion of the primeServer
     - minikube service api-service
 
 # Useful troubleshooting commands
+* kubectl get all
 * minikube ip
 * kubectl get pods --all-namespaces
 * kubectl get deployments
