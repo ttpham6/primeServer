@@ -2,7 +2,7 @@
 Repository for API to calculate primes
 
 # Configure and Deploy
-<p> These directions outline deploying the code and image using minikube and kubectl. 
+<p> These directions outline deploying the code and image using minikube and kubectl
 </p>
 
 
@@ -16,3 +16,14 @@ Repository for API to calculate primes
     - eval $(minikube docker-env -u)
 * Activate changes 
     - kubectl apply -f prime-api-deployment.yaml 
+
+# Verifying that deplyoment was susccesful
+
+* Start the browser and api
+    - minikube service prime-api-service
+
+# Useful troubleshooting commands
+
+* minikube ip
+* kubectl get pods --all-namespaces
+* kubectl get deployments
