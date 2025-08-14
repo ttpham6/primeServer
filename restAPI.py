@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-# from PrimeCalculator import miller_rabin, sieve_of_atkin
 import PrimeCalculator
 from PrimeCalculator import miller_rabin, sieveOfAtkin
 
