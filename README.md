@@ -48,4 +48,7 @@ https://github.com/ttpham6/primeClient
     - docker pull <image-name>
         - For example: python:3.13.6-slim-bookworm>
     - docker rmi <image_id>
+* Specific to this deployment
+    * minikube service api-service --url
+
 
