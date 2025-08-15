@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-server-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app:  api-server
+  template:
+    metadata:
+      labels: 
+        app: api-server
+    spec:
+      containers:
+        - name: api-server
+          image: prime-api:latest
+          imagePullPolicy: Never
+          ports:
+          - containerPort: 5000
