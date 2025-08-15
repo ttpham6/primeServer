@@ -26,12 +26,12 @@ https://github.com/ttpham6/primeClient
         - eval $(minikube docker-env)
     - Build image from current Dockerfile
         - minikube image build -t prime-api:latest .
-    - Unset the environment
-        - eval $(minikube docker-env -u)
     - Deploy the pod 
         - kubectl apply -f deploy.yaml
     - Deploy the service  
         - kubectl apply -f api-service.yaml 
+    - Unset the environment
+        - eval $(minikube docker-env -u)
 
 # Succesful Deployment
 * Start the browser and api
