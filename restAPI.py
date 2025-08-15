@@ -4,7 +4,11 @@ from PrimeCalculator import miller_rabin, sieveOfAtkin
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
+# CORS(app, supports_credentials=True, origins=["http://127.0.0.1:42755"]) # Allow credentials and specify the origin
+CORS(app, supports_credentials=True, origins=["http://127.0.0.1:*"]) # Allow credentials and specify the origin
+
+# minikube service api-service --url
 
 @app.route('/')
 def root():

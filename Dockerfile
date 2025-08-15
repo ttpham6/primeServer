@@ -1,5 +1,5 @@
 # Use a lightweight official Python image based on Debian's Buster
-FROM python:3.9.9-slim-buster
+FROM python:3.10.4-buster
 
 # Set the working directory inside the container
 WORKDIR /app

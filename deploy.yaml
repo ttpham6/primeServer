@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels: 
-        app: api-server
+        app: api-server    # Label used by the service selector
     spec:
       containers:
         - name: api-server

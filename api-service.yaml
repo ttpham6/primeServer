@@ -3,7 +3,12 @@ kind: Service
 metadata:
   name: api-service
 spec:
-  ports:
-  - port: 5000
   selector:
-    app: api-server
+    app: api-server   # This matches the label on the pods
+  ports:
+  - protocol: TCP
+    port: 5000 # The port the Service exposes
+    targetPort: 5000 # The port on the Pods that the Service routes to
+    nodePort: 30000
+  type: NodePort 
+
