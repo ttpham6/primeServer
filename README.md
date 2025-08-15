@@ -1,5 +1,5 @@
 # primeServer
-Repository for the webUI portion of the primeServer
+Repository for the REST JSON API portion of the primeServer
 A full deployment includes downloading this source from: 
 https://github.com/ttpham6/primeServer
 
@@ -25,15 +25,15 @@ https://github.com/ttpham6/primeClient
     - Set the environment variable to build image and save it directly to minikube
         - eval $(minikube docker-env)
     - Build image from current Dockerfile
-        - minikube image build -t prime-api:latest 
+        - minikube image build -t prime-api:latest .
     - Unset the environment
         - eval $(minikube docker-env -u)
-    - Deploy the pod
+    - Deploy the pod 
         - kubectl apply -f deploy.yaml
     - Deploy the service  
         - kubectl apply -f api-service.yaml 
 
-# Susccesful Deployment
+# Succesful Deployment
 * Start the browser and api
     - minikube service api-service
 
@@ -45,6 +45,7 @@ https://github.com/ttpham6/primeClient
 * kubectl exec -it container_ID_or_name -- sh
 * Docker image commands
     - docker image list
-    - docker pull <python:3.13.6-slim-bookworm>
+    - docker pull <image-name>
+        - For example: python:3.13.6-slim-bookworm>
     - docker rmi <image_id>
 
